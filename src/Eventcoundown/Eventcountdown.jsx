@@ -1,11 +1,10 @@
 import React from 'react';
-import cn from 'classnames';
 import dayjs, { extend } from 'dayjs';
 import durationPlugin from 'dayjs/plugin/duration';
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import * as style from './EventCountdown.module.css';
+import './EventCountdown.css';
 
 extend(durationPlugin);
 
@@ -60,8 +59,8 @@ export const Eventcountdown = (props) => {
 
   return (
     <div className={className}>
-      <p className={cn(style.title, titleClassName)}>{title}</p>
-      <p className={cn(style.time, timeClassName)}>
+      <p className={`title ${titleClassName}`}>{title}</p>
+      <p className={`time ${timeClassName}`}>
         {days !== 0 && `${days}${daysTip}`} {`${hours}${hoursTip}`} {`${minutes}${minutesTip}`}{' '}
         {`${seconds}${secondsTip}`}
       </p>
