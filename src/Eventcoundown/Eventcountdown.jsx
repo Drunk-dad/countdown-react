@@ -84,3 +84,5 @@ Eventcountdown.propTypes = {
   onTick: PropTypes.func,
   onFinish: PropTypes.func
 };
+
+export default Eventcountdown;
