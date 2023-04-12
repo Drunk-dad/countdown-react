@@ -1,6 +1,10 @@
 {	
 	"name": "countdown-react",
 	"source": "src/index.html",
+	"scripts": {
+		"dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+	},
   "devDependencies": {
     "classnames": "^2.3.2",
     "parcel": "^2.8.3",
