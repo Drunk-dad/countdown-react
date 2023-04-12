@@ -1,1 +1,1 @@
-export { default } './Eventcountdown'
+export { default } from './Eventcountdown';
